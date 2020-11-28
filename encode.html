@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pako/1.0.11/pako.min.js"></script>
+    <script type="text/javascript" src="upng.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+    <div class="navigation">
+        <a class="navigation-link" href="index.html">Decode</a>
+        <a class="title">Encode</a>
+    </div>
+
+    <textarea id="message" class="message"></textarea>
+
+    <div class="container">
+        <label for="input" class="label">Choose File</label>
+        <input id="input" class="input" type="file" accept=".png" onchange="encodeFile(event)">
+    </div>
+
+    <img id="image" class="image">
+</body>
+</html>
